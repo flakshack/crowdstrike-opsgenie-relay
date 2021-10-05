@@ -1,0 +1,27 @@
+{
+  "body": {
+    "data": {
+      "detections.action_taken": "Detection, standard detection.",
+      "detections.command_line": "choice  /m crowdstrike_sample_detection",
+      "detections.file_name": "choice.exe",
+      "detections.file_path": "\\Device\\HarddiskVolume2\\Windows\\System32",
+      "detections.ioc_type": "<nil>",
+      "detections.ioc_value": "<nil>",
+      "detections.objective": "Falcon Detection Method",
+      "detections.parent_command_line": "cmd.exe",
+      "detections.parent_image_file_name": "\\Device\\HarddiskVolume2\\Windows\\System32\\cmd.exe",
+      "detections.severity": "Low",
+      "detections.tactic": "Malware",
+      "detections.technique": "Malicious File",
+      "detections.url": "https://www.example.com",
+      "detections.user_name": "TEST_USERNAME",
+      "devices.hostname": "TEST_COMPUTER"
+    },
+    "meta": {
+      "event_reference_url": "https://www.example.com",
+      "timestamp": 1633379588,
+      "trigger_name": "detections.new",
+      "workflow_id": "12314515135113241231234124312346"
+    }
+  }
+}
