@@ -67,7 +67,7 @@ def lambda_handler(event, context):
             }
             print(post_data)
             # Call the OpsGenie API to create the alert
-           #return_status, return_body = create_opsgenie_alert(post_data)
+            return_status, return_body = create_opsgenie_alert(post_data)
     
         else:
             # The workflow id didn't match, so just log it and don't create an alert.
