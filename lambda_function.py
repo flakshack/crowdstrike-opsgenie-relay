@@ -41,9 +41,9 @@ def lambda_handler(event, context):
             # The message field is the SUBJECT for the OpsGenie page.  Here we set a friendly subject
             # based on the trigger_name that is passed by CrowdStrike in the meta fields.
             message = 'New CrowdStrike event has occurred'
-            if body['meta']['trigger_name'] == 'detections.new':
+            if 'new detection' in body['meta']['trigger_name'].lower():
                 message = 'New CrowdStrike detection has occurred'
-            elif body['meta']['trigger_name'] == 'incidents.new':
+            elif 'new incident' in body['meta']['trigger_name'].lower():
                 message = 'New CrowdStrike incident has occurred'
     
             # Loop through the events->body->data collection and add them to the description
