@@ -1,7 +1,7 @@
 {
   "body": {
     "data": {
-      "detections.action_taken": "Detection, standard detection.",
+      "detections.action_taken": "Endpoint detection, standard detection",
       "detections.command_line": "choice  /m crowdstrike_sample_detection",
       "detections.file_name": "choice.exe",
       "detections.file_path": "\\Device\\HarddiskVolume2\\Windows\\System32",
@@ -19,8 +19,9 @@
     },
     "meta": {
       "event_reference_url": "https://www.example.com",
-      "timestamp": 1633379588,
-      "trigger_name": "detections.new",
+      "timestamp": "2022-10-01T21:55:55Z",
+      "trigger_category": "Detection",
+      "trigger_name": "New detection",
       "workflow_id": "12314515135113241231234124312346"
     }
   }
