@@ -43,7 +43,7 @@ def lambda_handler(event, context):
             message = 'New CrowdStrike event has occurred'
             if 'new detection' in body['meta']['trigger_name'].lower():
                 message = 'New CrowdStrike detection has occurred'
-            elif 'new incident' in body['meta']['trigger_name'].lower:
+            elif 'new incident' in body['meta']['trigger_name'].lower():
                 message = 'New CrowdStrike incident has occurred'
     
             # Loop through the events->body->data collection and add them to the description
